@@ -1,0 +1,59 @@
+¿Cual es la funcion del archivo __init__.py?
+El archivo __init__.py se utiliza para realizar configuraciones de importación. Algo que se utiliza mucho en este archivo es la importación de clases, funciones, etc, para que puedan ser utilizadas en otros paquetes.
+
+¿Cuales son los atributos del manifest que se comenta en el tutorial? Busca informacion en la web de odoo
+name (str, required)
+the human-readable name of the module
+
+version (str)
+this module’s version, should follow semantic versioning rules
+
+description (str)
+extended description for the module, in reStructuredText
+
+author (str)
+name of the module author
+
+website (str)
+website URL for the module author
+
+category (str, default: Uncategorized)
+classification category within Odoo, rough business domain for the module.
+
+depends (list(str))
+Odoo modules which must be loaded before this one, either because this module uses features they create or because it alters resources they define.
+
+data (list(str))
+List of data files which must always be installed or updated with the module. A list of paths from the module root directory
+
+demo (list(str))
+List of data files which are only installed or updated in demonstration mode
+
+
+application (bool, default: False)
+Whether the module should be considered as a fully-fledged application (True) or is just a technical module (False) that provides some extra functionality to an existing application module.
+
+installable (bool default: True)
+Whether a user should be able to install the module from the Web UI or not.
+
+¿Que son los campos reservados en Odoo segun este tutorial?
+Odoo creates a few fields in all models1. These fields are managed by the system and shouldn’t be written to. They can be read if useful or necessary:
+
+id (Id)
+The unique identifier for a record in its model.
+
+create_date (Datetime)
+Creation date of the record.
+
+create_uid (Many2one)
+User who created the record.
+
+write_date (Datetime)
+Last modification date of the record.
+
+write_uid (Many2one)
+user who last modified the record.
+
+Special fields
+By default, Odoo also requires a name field on all models for various display and search behaviors. The field used for these purposes can be overridden by setting _rec_name.
+
