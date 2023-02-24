@@ -1,0 +1,7 @@
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/endpoint/TicketEndpoint.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/TicketApplication.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/service/TicketService.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/service/TicketRepository.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/domain/Ticket.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/domain/Comment.java
+/home/alba/GIT/Trabajos DDI/Bloque6Rubrica4-main/src/main/java/org/javacodegeeks/webservices/rest/ticket/service/CommentRepository.java

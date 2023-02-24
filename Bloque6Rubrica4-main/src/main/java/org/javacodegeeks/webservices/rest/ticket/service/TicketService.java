@@ -14,9 +14,6 @@ public class TicketService {
 	@Autowired
 	private TicketRepository<Ticket> ticketRepository;
 
-	// --------------------------------------------
-	// CRUD OPERATIONS FOR PARENT RECORDS (TICKETS)
-
 	public Ticket createTicket(Ticket ticket) {
 		return ticketRepository.save(ticket);
 	}
@@ -50,9 +47,6 @@ public class TicketService {
 	@Autowired
 	private CommentRepository commentRepository;
 
-	// --------------------------------------------
-	// CRUD OPERATIONS FOR CHILD RECORDS (COMMENTS)
-
 	public Ticket createComment(long ticketId, Comment comment) {
 		Ticket ticket = findTicket(ticketId);
 		comment.setTicket(ticket);
@@ -84,3 +78,4 @@ public class TicketService {
 		commentRepository.delete(comment);
 	}
 }
+

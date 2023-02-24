@@ -50,9 +50,6 @@ public class TicketEndpoint {
 		return String.format("Ticket id #%d successfully deleted", id);
 	}
 
-	// --------------------------------------------
-	// CRUD OPERATIONS FOR CHILD RECORDS (COMMENTS)
-
 	@PostMapping("/tickets/{id}/comments")
 	public Ticket createComment(@PathVariable long id, @RequestBody Comment comment) {
 		return ticketService.createComment(id, comment);
